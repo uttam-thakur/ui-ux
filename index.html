@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MobSelling </title>
+    <link rel ="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class='Header'>
+        <img src= logo.jpg height="50px" width="50px" alt= 'avtar' />
+
+        <input class="input" id="search"type='text' placeholder="Search.." />
+        <button class="clickHandler" onclick="searchHandler()">search</button>
+        </div>
+        <div class="mainBody">
+            <label>Price Filter</label>
+            <select id="priceFilter" onchange="priceFilter()" placeholder="select price">
+            <option value=7000>7000</option>
+            <option value=8000>8000</option>
+            <option value=9000>9000</option>
+            <option value=10000>10000</option>
+            <option value=12000>12000</option>
+            <option value=15000>15000</option>
+        </select>
+        <label>Apply Filter</label>
+        <input type="checkbox" id="myCheck" onchange="priceFilter()"/>
+            <div class ="mobiles"></div>
+        </div>
+        <!-- <h4 class="Head">List of Mobiles</h4>
+        <div class="HomeScreen">
+            <div class="image1">
+                <img class ="imag"src="https://images-eu.ssl-images-amazon.com/images/I/41JKsal7IsL._SX300_SY300_QL70_FMwebp_.jpg" alt="image1"></img>
+                <h4>Mobile Name</h4>
+                <p class="feature">
+                    <ul class="feat">
+                        <li>Display: 6.5"</li>
+                        <li>Storage: 64GB</li>
+                        <li>Ram: 8Gb</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="image2">
+                <img class ="imag"src="https://images-eu.ssl-images-amazon.com/images/I/41JKsal7IsL._SX300_SY300_QL70_FMwebp_.jpg" alt="image2"></img>
+                <h4>Mobile Name</h4>
+                <p class="feature">
+                    <ul class="feat">
+                        <li>Display: 6.5"</li>
+                        <li>Storage: 64GB</li>
+                        <li>Ram: 8Gb</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="image3">
+                <img class ="imag"src="https://images-eu.ssl-images-amazon.com/images/I/41JKsal7IsL._SX300_SY300_QL70_FMwebp_.jpg" alt="image3"></img>
+                <h4>Mobile Name</h4>
+                <p class="feature">
+                    <ul class="feat">
+                        <li>Display: 6.5"</li>
+                        <li>Storage: 64GB</li>
+                        <li>Ram: 8Gb</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="image3">
+                <img class ="imag"src="https://images-eu.ssl-images-amazon.com/images/I/41JKsal7IsL._SX300_SY300_QL70_FMwebp_.jpg" alt="image3"></img>
+                <h4>Mobile Name</h4>
+                <p class="feature">
+                    <ul class="feat">
+                        <li>Display: 6.5"</li>
+                        <li>Storage: 64GB</li>
+                        <li>Ram: 8Gb</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="image3">
+                <img class ="imag"src="https://images-eu.ssl-images-amazon.com/images/I/41JKsal7IsL._SX300_SY300_QL70_FMwebp_.jpg" alt="image3"></img>
+                <h4>Mobile Name</h4>
+                <p class="feature">
+                    <ul class="feat">
+                        <li>Display: 6.5"</li>
+                        <li>Storage: 64GB</li>
+                        <li>Ram: 8Gb</li>
+                    </ul>
+                </p>
+            </div>
+        </div> -->
+
+    
+   
+</body>
+<script>
+    var mobiles=[{
+        // image:url('image1.webp'),
+        Name:"samsung S1",
+        price:7000,
+        Display:"6.5",
+        Ram:"4GB",
+        Storage:"64GB"
+
+    },
+    {
+        Name:"samsung S2",
+        price:8000,
+        Display:"6.5",
+        Ram:"4GB",
+        Storage:"64GB"
+        
+
+    },
+
+    {
+        Name:"samsung z2",
+        price:8000,
+        Display:"6.5",
+        Ram:"4GB",
+        Storage:"64GB"
+        
+
+    },
+    {
+        Name:"samsung z2",
+        price:8000,
+        Display:"6.5",
+        Ram:"4GB",
+        Storage:"64GB"
+        
+
+    },
+    {
+        Name:"samsung z1",
+        price:8000,
+        Display:"6.5",
+        Ram:"4GB",
+        Storage:"64GB"
+        
+
+    },
+    {
+        Name:"samsung S3",
+        price:12000,
+        Display:"6.5",
+        Ram:"4GB",
+        Storage:"64GB"
+        
+    },
+    {
+        Name:"samsung S4",
+        price:10000,
+        Display:"6.5",
+        Ram:"4GB",
+        Storage:"64GB"
+        
+    },
+    {
+        Name:"samsung S4",
+        price:12000,
+        Display:"6.5",
+        Ram:"4GB",
+        Storage:"64GB"
+        
+    },
+    {
+        Name:"samsung S4",
+        price:12000,
+        Display:"6.5",
+        Ram:"4GB",
+        Storage:"64GB"
+        
+    },
+    {
+        Name:"samsung S4",
+        price:12000,
+        Display:"6.5",
+        Ram:"4GB",
+        Storage:"64GB"
+        
+    },
+    {
+        Name:"samsung S4",
+        price:12000,
+        Display:"6.5",
+        Ram:"4GB",
+        Storage:"64GB"
+        
+    },
+    {
+        Name:"samsung S4",
+        price:12000,
+        Display:"6.5",
+        Ram:"4GB",
+        Storage:"64GB"
+        
+    },
+    {
+        Name:"samsung S4",
+        price:12000,
+        Display:"6.5",
+        Ram:"4GB",
+        Storage:"64GB"
+        
+    },
+    {
+        Name:"samsung S4",
+        price:12000,
+        Display:"6.5",
+        Ram:"4GB",
+        Storage:"64GB"
+        
+    },
+    {
+        Name:"samsung S4",
+        price:12000,
+        Display:"6.5",
+        Ram:"4GB",
+        Storage:"64GB"
+        
+    },
+    {
+        Name:"samsung S4",
+        price:12000,
+        Display:"6.5",
+        Ram:"4GB",
+        Storage:"64GB"
+        
+    }]
+    var displayMobile=[...mobiles];
+    const container = document.querySelector(".mobiles")
+    function display(data){
+        while(container.firstChild){
+            container.removeChild(container.firstChild);
+        }
+        // console.log(displayMobile);
+        // displayMobiles.map((newMob)=>{
+        data.map((newMob)=>{
+        
+            const newMobile= document.createElement("div")
+                newMobile.setAttribute('class','newMobile')
+                const mobName =document.createElement("h5")
+                const mobPrice =document.createElement("h4")
+                const mobDisplay =document.createElement("h6")
+                const mobRam =document.createElement("h6")
+                const mobStorage =document.createElement("h6")
+
+                mobName.innerHTML='Name  : '+newMob.Name;
+                    mobPrice.innerHTML='Price  '+newMob.price;
+                    mobRam.innerHTML='Ram  '+newMob.Ram;
+                    mobDisplay.innerHTML='Display  '+newMob.Display;
+                    mobStorage.innerHTML='Storage  '+newMob.Storage;
+                    
+                    // newMobile.appendChild(image)
+                    newMobile.appendChild(mobPrice)
+                    newMobile.appendChild(mobRam)
+                    newMobile.appendChild(mobDisplay)
+                    newMobile.appendChild(mobStorage)
+                    newMobile.appendChild(mobName)
+
+                    container.appendChild(newMobile)
+                    // container.appendChild(image)
+
+        }  )
+    }
+
+    display(displayMobiles);
+    function priceFilter(){
+        
+        
+var checkBox = document.getElementById("myCheck");
+console.log(checkBox.checked);
+console.log(document.getElementById("priceFilter").value);
+// while(container.firstChild){
+            // container.removeChild(container.firstChild);
+        // }
+        if(checkBox.checked){
+        var x=document.getElementById("priceFilter").value;
+        var newMobilesToDisplay = mobiles.filter((mob) => mob.price <= x)
+        console.log(newMobilesToDisplay);
+        displayMobiles=[...newMobilesToDisplay]
+        console.log(displayMobiles);
+        }
+        else{
+            displayMobiles=[...mobiles]
+        }
+        display(displayMobiles);
+    }
+    function searchHandler(){
+        var search= document.getElementById("search").value;
+        // console.log(search,mobiles);
+        var searchMobile=[""];
+        searchMobile= mobiles.filter((newMob)=>newMob.Name==search)
+        console.log(searchMobile);
+        if(searchMobile[0]){
+        displayMobiles=[...searchMobile]
+        display(displayMobiles);}
+    }
+</script>
+</html>
